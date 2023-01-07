@@ -8,7 +8,7 @@ public enum CoolingType {
     private final int upperLimit;
     private final int lowerLimit;
 
-    private CoolingType(int upperLimit, int lowerLimit) {
+    CoolingType(int lowerLimit, int upperLimit) {
         this.upperLimit = upperLimit;
         this.lowerLimit = lowerLimit;
     }
