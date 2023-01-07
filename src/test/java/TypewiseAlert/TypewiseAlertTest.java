@@ -9,7 +9,7 @@ public class TypewiseAlertTest
     @Test
     public void infersBreachAsPerLimits()
     {
-      assertTrue(TypewiseAlert.inferBreach(12, 20, 30) ==
-        TypewiseAlert.BreachType.TOO_LOW);
+      assertTrue(BreachChecker.inferBreach(12, 20, 30) ==
+        BreachType.TOO_LOW);
     }
 }
