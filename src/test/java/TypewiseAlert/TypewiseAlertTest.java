@@ -45,4 +45,9 @@ public class TypewiseAlertTest {
         assertTrue(MockControllerAlerter.invocationCount == 1);
         assertTrue(MockEmailAlerter.invocationCount == 3);
     }
+
+    @Before
+    public void testingTypewiseAlertObjectCreation() {
+        TypewiseAlert typewiseAlert = new TypewiseAlert();
+    }
 }

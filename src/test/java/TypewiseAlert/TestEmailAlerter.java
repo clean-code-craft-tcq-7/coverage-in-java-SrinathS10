@@ -1,5 +1,6 @@
 package TypewiseAlert;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -12,5 +13,10 @@ public class TestEmailAlerter {
         assertTrue(EmailAlerter.isAlertRequired(BreachType.TOO_HIGH));
         assertTrue(EmailAlerter.isAlertRequired(BreachType.TOO_LOW));
         assertFalse(EmailAlerter.isAlertRequired(BreachType.NORMAL));
+    }
+
+    @Before
+    public void testingEmailAlerterObjectCreation() {
+        EmailAlerter emailAlerter = new EmailAlerter();
     }
 }

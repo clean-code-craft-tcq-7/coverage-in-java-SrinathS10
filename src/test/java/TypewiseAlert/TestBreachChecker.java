@@ -1,5 +1,6 @@
 package TypewiseAlert;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertSame;
@@ -41,5 +42,10 @@ public class TestBreachChecker {
         assertSame(BreachChecker.classifyTemperatureBreach(CoolingType.HI_ACTIVE_COOLING, 100), BreachType.TOO_HIGH);
         assertSame(BreachChecker.classifyTemperatureBreach(CoolingType.MED_ACTIVE_COOLING, 25), BreachType.NORMAL);
         assertSame(BreachChecker.classifyTemperatureBreach(CoolingType.PASSIVE_COOLING, -25), BreachType.TOO_LOW);
+    }
+
+    @Before
+    public void testingBreachCheckerObjectCreation() {
+        BreachChecker breachChecker = new BreachChecker();
     }
 }
