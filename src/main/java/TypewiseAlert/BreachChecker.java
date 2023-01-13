@@ -4,13 +4,11 @@ public class BreachChecker {
 
     public static BreachType inferBreach(double value, double lowerLimit, double upperLimit) {
         BreachType result;
-        if(value < lowerLimit) {
+        if (value < lowerLimit) {
             result = BreachType.TOO_LOW;
-        }
-        else if(value > upperLimit) {
+        } else if (value > upperLimit) {
             result = BreachType.TOO_HIGH;
-        }
-        else {
+        } else {
             result = BreachType.NORMAL;
         }
         return result;
